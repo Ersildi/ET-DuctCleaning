@@ -1,0 +1,59 @@
+.gallery {
+  display: flex;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 5px;
+  position: relative;
+  transition: flex 0.7s ease-in, opacity 0.7s;
+  opacity: 0.25;
+}
+
+#panel1 {
+  background-image: url(/Images/1_1.jpg);
+  background-position: left;
+}
+
+#panel2 {
+  background-image: url(/Images/1_2.jpg);
+  background-position: 25%;
+}
+
+#panel3 {
+  background-image: url(/Images/1_3.jpg);
+  background-position: center;
+}
+
+#panel4 {
+  background-image: url(/Images/1_4.jpg);
+  background-position: 75%;
+}
+
+#panel5 {
+  background-image: url(/Images/1_5.jpg);
+  background-position: right;
+}
+
+.panel.active {
+  flex: 2;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
