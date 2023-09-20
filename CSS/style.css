@@ -1,7 +1,7 @@
 body {
   width: 100%;
   max-width: 1024px;
-  min-width: 375px;
+  min-width: 50%;
   background-image: url(/Images/Background.jpeg);
   background-attachment: fixed;
   height: fit-content;
